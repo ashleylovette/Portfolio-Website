@@ -17,11 +17,8 @@ section{
     --Lobster: "Lobster", cursive;
     --Heebo: "Heebo", cursive;
     --NotoSans: "Noto-Sans", cursive;
-    --light-black: #2524252f;
-    --bg-gradient: linear-gradient(
-        to bottom,
-        #ffffff, #aaa9b6
-    );
+    --light-black: hsla(300, 1%, 14%, 0.184);
+    --bg: black;
     --light-gray: #rgba(255,255,255,025);
 }
 
@@ -33,20 +30,20 @@ header a{
 
 header {
     background: whitesmoke;
-    background: var(--bg-gradient);
+    background: var(--bg);
 }
 
 .dropdown-content{
     display: none;
     position: absolute;
-    background-color: white;
+    background-color: black;
     min-width: 160px;
     box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.2); 
     z-index: 1;
 }
 
 .dropdown-content a{
-    color: black;
+    color: whitesmoke;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -75,7 +72,7 @@ header .navbar-brand {
 }
 
 header .nav-link:hover {
-    color: black;
+    color: white;
 }
 
 header .row .col-md-5 {
@@ -101,17 +98,21 @@ header .container .col-md-7 h6{
     padding: 1vmin;
     letter-spacing: 4px;
     font-weight: bold;
+
+    color: rgb(196, 191, 191);
 }
 
 header .contianer .col-md-7 h1 {
     font-size: 8vmin;
+
+    color: rgb(196, 191, 191);
     font-weight: bold;
     padding: 0.1em 0em;
 }
 
 header .container .col-md-7 p{
     padding: 1vmin 5vmin;
-    color: #777171;
+    color: whitesmoke;
 }
 
 header .container .col-md-7 button{
@@ -157,7 +158,7 @@ header .container .col-md-7 button{
 
 .section-1 .row .col-md-6 .panel p{
     font-size: 1em;
-    color: rgba(0, 0, 0, 0.5);
+    color: white(0, 0, 0, 0.5);
 }
 
 /* Section 2 */
@@ -165,14 +166,14 @@ header .container .col-md-7 button{
 .cover{
     width: 100%;
     height: 55vmin;
-    background: url('../assets/pexels-wendy-wei-1677710.jpg');
-    background-position: -10rem -20rem;
+    background-image: url('/assets/pexels-designecologist-1779487.jpg');
+    background-position: -5rem -20rem;
     background-size: 40%;
     position: relative;
 }
 
 .cover .content{
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(255, 253, 253, 0.7);
     height: 100%;
     width: 100%;
     padding-top: 19vmin;
@@ -181,16 +182,10 @@ header .container .col-md-7 button{
 .cover .content h1{
     font-family: var(--Heebo);
     font-size: 6vmin;
-    color: whitesmoke;
+    color: rgb(177, 177, 177);
     font-weight: bold;
 }
 
-.cover .content p{
-    font-family: var(--Rubik);
-    font-size: 3vmin;
-    color: #c4bdbd;
-
-}
 
 .numbers .rect{
     position: relative;
@@ -205,7 +200,7 @@ header .container .col-md-7 button{
 }
 
 .numbers{
-    margin-top: -15vmin;
+    margin-top: -25vmin;
 }
 
 .numbers .rect h1{
@@ -217,57 +212,13 @@ header .container .col-md-7 button{
     font-family: var(--Heebo);
 }
 
-.purchase > h1 {
-    padding-top: 15vmin;
-    padding-bottom: 0.1em;
-    font-family: var(--Lobster);
-}
-
-.purchase > p{
-    color: var(--light-black);
-    font-size: 3vmin;
-    padding-bottom: 10vmin;
-}
-
-.purchase .cards .card{
-    width: 22rem;
-    margin: 3vmin;
-}
-
-.cards div{
-    padding: 0;
-    margin: 0;
-}
-
-.cards .title{
-    background: #000000;
-    padding: 1.4rem 2.5rem;
-    font-size: 5.5vmin;
-    color:whitesmoke;
-    font-family: var(--Sniglet-font);
-}
-
-.card .card-text{
-    padding: 2.5rem 3rem;
-    color: rgba(0, 0, 0, 0.658);
-}
-
-.card-body .pricing{
-    border-top-right-radius: 170px;
-    border-top-left-radius: 170px;
-}
-
-.card-body .pricing>h1{
-    font-size: 10vmin;
-    padding: 1em 0.5em;
-}
 
 /* Section 3 */
 
 .section-3 {
     height: 70vmin;
     margin-top: 15vmin;
-    background: var(--bg-gradient);
+    background-color: whitesmoke;
 }
 
 .section-3 .col-md-12 h1{
