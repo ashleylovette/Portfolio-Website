@@ -49,14 +49,12 @@ header {
     display: block;
 }
 
-.dropdown-content a:hover{
-    background: #ddd;
-}
-
 .dropdown:hover .dropdown-content{
     display: block;
-
+    transform: translateX(.75em);
+    translate: translate(300ms);
 }
+
 
 .navbar-nav {
     padding-right: 10.5em;
@@ -71,8 +69,12 @@ header .navbar-brand {
     padding-left: 8rem;
 }
 
+header .navbar-brand:hover{
+    color:#c92c80;
+}
+
 header .nav-link:hover {
-    color: white;
+    color: #c92c80;
 }
 
 header .row .col-md-5 {
@@ -118,6 +120,12 @@ header .container .col-md-7 p{
 header .container .col-md-7 button{
     border-radius: 30px;
     font-weight: bold;
+}
+
+header .container .col-md-7 button:hover {
+    box-shadow: 0 0.4rem 1.4rem #c92c80;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
 }
 
 /* Section 1 */
@@ -285,7 +293,8 @@ header .container .col-md-7 button{
 }
 
 .carousel-control-next,
-.carousel-control-prev /*, .carousel-indicators */ {
+.carousel-control-prev , 
+.carousel-indicators {
     filter: invert(100%);
 }
 
