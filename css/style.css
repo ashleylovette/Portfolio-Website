@@ -12,11 +12,11 @@ section{
 }
 
 :root{
-    --Sniglet-font:"Sniglet", cursive;
-    --Rubik: "Rubik", cursive;
-    --Lobster: "Lobster", cursive;
-    --Heebo: "Heebo", cursive;
-    --NotoSans: "Noto-Sans", cursive;
+    --Sniglet-font:"Sniglet", monospace;
+    --Rubik: "Rubik", monospace;
+    --Lobster: "Lobster", monospace;
+    --Heebo: "Heebo", monospace;
+    --NotoSans: "Noto-Sans", monospace;
     --light-black: hsla(300, 1%, 14%, 0.184);
     --bg: black;
     --light-gray: #rgba(255,255,255,025);
@@ -29,9 +29,10 @@ header a{
 }
 
 header {
-    background: whitesmoke;
     background: var(--bg);
 }
+
+/* DROPDOWN */
 
 .dropdown-content{
     display: none;
@@ -55,6 +56,7 @@ header {
     translate: translate(300ms);
 }
 
+/* DROPDOWN END */
 
 .navbar-nav {
     padding-right: 10.5em;
@@ -100,9 +102,59 @@ header .container .col-md-7 h6{
     padding: 1vmin;
     letter-spacing: 4px;
     font-weight: bold;
-
-    color: rgb(196, 191, 191);
+ 
+    color: rgb(196, 191, 191); 
 }
+
+
+/* TEXT ANIMATION */
+
+header .container .col-md-7 h6.animate-text {
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+}
+
+header .container .col-md-7 h6.animate-text::before, 
+header .container .col-md-7 h6.animate-text::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+header .container .col-md-7 h6.animate-text.at1::before {
+    background-color: var(--bg);
+    animation: typewriter .95s 1s steps(6) forwards;
+}
+
+header .container .col-md-7 h6.animate-text.at2::before {
+    background-color: var(--bg);
+    animation: typewriter 1s 2s steps(9) forwards;
+}
+
+header .container .col-md-7 h6.animate-text.at3::before {
+    background-color: var(--bg);
+    animation: typewriter 1.5s 3.2s steps(14) forwards;
+}
+
+header .container .col-md-7 h6.animate-text.at4::before {
+    background-color: var(--bg);
+    animation: typewriter .95s 4.75s steps(9) forwards;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+/* END TEXT ANIMATION */
+
+
+
 
 header .contianer .col-md-7 h1 {
     font-size: 8vmin;
@@ -117,10 +169,7 @@ header .container .col-md-7 p{
     color: whitesmoke;
 }
 
-header .container .col-md-7 button{
-    border-radius: 30px;
-    font-weight: bold;
-}
+/* BUTTON ANIMATION */
 
 header .container .col-md-7 button:hover {
     box-shadow: 0 0.4rem 1.4rem #c92c80;
@@ -128,16 +177,36 @@ header .container .col-md-7 button:hover {
     transition: transform 150ms;
 }
 
+header .container .col-md-7 button{
+    border-radius: 30px;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 3s 6s ease forwards;
+}
+
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* END BUTTON ANIMATION */
+
+
 /* Section 1 */
 
 .section-1{
-    padding: 20vmin 0;
+    padding: 10vmin 0;
     margin: 10vmin;
 }
 
 .section-1 .row .col-md-6 .pray img{
     opacity: 0.8;
     width: 78%;
+    max-height: 675px;
     border-radius: 0.2em;
 }
 
@@ -329,14 +398,3 @@ footer .column i{
 footer .column i + i{
     padding: 0 0.5em;
 }
-
-/* Sticky Nav Class */
-
-/* .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #F8F9FA;
-    z-index: 9999;
-    transition: all 1.5s ease;
-} */
