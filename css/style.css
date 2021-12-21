@@ -22,6 +22,8 @@ section{
     --light-gray: #rgba(255,255,255,025);
 }
 
+
+
 header a{
     font-family: var(--Rubik-font);
     font-size: 0.9em;
@@ -30,7 +32,10 @@ header a{
 
 header {
     background: var(--bg);
+    padding-bottom: -7em;
 }
+
+
 
 /* DROPDOWN */
 
@@ -58,13 +63,15 @@ header {
 
 /* DROPDOWN END */
 
+/* NAVBAR */
+
 .navbar-nav {
     padding-right: 10.5em;
 }
 
 header .nav-item{
-    margin-left:20px;
-    margin-right:20px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
 header .navbar-brand {
@@ -78,6 +85,10 @@ header .navbar-brand:hover{
 header .nav-link:hover {
     color: #c92c80;
 }
+
+/* NAVBAR END */
+
+/* FRONT PAGE */
 
 header .row .col-md-5 {
     padding: 4.2vmin 1vmin;
@@ -194,6 +205,7 @@ header .container .col-md-7 button{
 }
 
 /* END BUTTON ANIMATION */
+/* FRONT PAGE END */
 
 
 /* Section 1 */
@@ -264,7 +276,7 @@ header .container .col-md-7 button{
 }
 
 
-.numbers .rect{
+.tech-stack .rect{
     position: relative;
     z-index: 1;
     background: white;
@@ -276,89 +288,59 @@ header .container .col-md-7 button{
     box-shadow: 1px 2px 50px 0px #686a81;
 }
 
-.numbers{
+.tech-stack{
     margin-top: -25vmin;
 }
 
-.numbers .rect h1{
+.tech-stack .rect h1{
     font-size: 5rem;
     color: #4f5472;
 }
 
-.numbers .rect p{
+.tech-stack .rect p{
     font-family: var(--Heebo);
 }
 
 
-/* Section 3 */
+/* section 3 */
 
-.section-3 {
-    height: 70vmin;
-    margin-top: 15vmin;
-    background-color: whitesmoke;
-}
-
-.section-3 .col-md-12 h1{
-    padding: 2em 0 0.5em 0;
-    color: black;
-    font-size: 6vmin;
-}
-
-.section-3 .col-md-12 >p{
-    padding: 0 4em;
-    padding-bottom: 2em;
-    color: var(--light-gray);
-    font-size: 3vmin;
-}
-
-.section-3 .desktop {
-    background:white;
-    display: inline-block;
-    border-radius: 3em;
-    padding: 2vmin 4.5vmin;
-    margin: 1em;
-}
-
-.section-3 .desktop h3{
-    font-size: 4vmin;
-}
-
-.sectino-3 .desktop p{
-    font-size: 2vmin;
-}
-
-/* section 4 */
-
-.section-4 .container h1{
+.section-3 .container h1{
     font-size: 6vmin;
     padding-top: 14vmin;
 }
 
-.section-4 .team{
-    padding: 10vmin 4vmin;
+.section-3 .team{
+    padding: 11vmin 4vmin;
 }
 
-.section-4 .card{
+.section-3 .card{
     width: 22rem;
+    height: max(38rem);
+}
+.section-3 img {
+    max-height: 500px;
 }
 
-.section-4 .card .card-text{
-    padding: 0.5em;
+
+.section-3 .card .card-text{
+    padding-top: 0.5em;
 }
 
-.section-4 .card .card-body a{
+.section-3 .card .card-body a{
+    padding-top: initial;
     font-size: 1.5em;
 }
 
-.section-4 .carousel-item{
+.section-3 .carousel-item{
     padding-left: 2rem;
     padding-right: 2rem;
+    margin-bottom: 2em;
 }
 
 .border-radius{
     border-radius: 340px;
     width: 60%;
-    margin-top: 1em;
+    margin-top: 15px;
 }
 
 .carousel-control-next,
