@@ -118,6 +118,11 @@ header .container .col-md-7 h6{
 }
 
 
+header .container .col-md-7 h6.animate-text.at4 {
+    color: #c92c80;
+    
+}
+
 /* TEXT ANIMATION */
 
 header .container .col-md-7 h6.animate-text {
@@ -290,6 +295,7 @@ header .container .col-md-7 button{
 
 .tech-stack{
     margin-top: -25vmin;
+    padding-bottom: 2.2rem;
 }
 
 .tech-stack .rect h1{
