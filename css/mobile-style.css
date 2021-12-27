@@ -1,83 +1,106 @@
 /* Tablet */
 @media only screen and (max-width: 768px){
     header .navbar-brand{
-        padding-left: 1rem;
+        padding-left: 2rem;
     }
 
-    .section-1 .row .col-md-6 .panel{
+
+    /* CHANGE */
+    header .navbar-toggler {
+        margin-left: 70vmin;
+    }
+
+    header .navbar-items {
+        margin-left: 100vmin;
+    }
+
+    header .bottom-header {
         position: initial;
         width: initial;
         height: initial;
+        padding-bottom: -25rem;
+    } 
+
+
+    .section-1 .row .col-md-6 .panel{
+        position: initial;
+        width: 350px;
+        height: initial;
+        margin-top: 75px;
+        margin-left: -75px;
     }
 
     .section-1 .row .col-md-6 .panel p{
         font-size: .85em;
     }
 
-    .section-2 .cover{
-        background-position: -25vmin -10vmin;
-    }
 
-    .numbers .rect{
+    .tech-stack .rect{
         width: 10rem;
-        height: 8rem;
+        height: 12rem;
     }
 
-    .numbers .rect h1{
+    .tech-stack .rect h1{
         font-size: 2rem;
     }
 
-    .section-3{
-        height: inherit;
-        padding: 10vmin !important;
-    }
 
-    .section-3 .row h1{
-        padding: 6vmin 4vmin;
-    }
-
-    .section-3 .row .col-md-6{
-        text-align: center !important;
-    }
-
-    .section-3 .desktop i{
-        font-size: 8vmin;
-    }
-
-    .section-4 .carousel-item{
+    .section-3 .carousel-item{
         padding-left: 0rem;
     }
 
-    .section-4 .card{
+    .section-3 .card{
         margin-right: 30rem;
     }
 
-    .section-4 .team{
+    .section-3 .team{
         display: flex;
         flex-direction: column;
-        align-content: center;
+        margin-left: 174px;
+
     }
 
-    .section-4 .carousel-inner{
+    .section-3 .carousel-inner{
         width: 24rem; 
     }
+
+    .section-3 .carousel-item{
+        margin-top: 2em;
+    }
+
+    .section-3 .carousel-control-prev {
+        margin-left: -14px;
+    }
+
+    .section-3 .carousel-control-next {
+        margin-right: -213px;
+        margin-bottom: -2.25px;
+    }
+
+
 }
  
 /* large phone */
 @media only screen and (max-width: 425px){
+
     footer .row .col-md-2{
         margin-top: 8vmin;
+    }
+
+    .section-3 .carousel-item{
+        margin-top: 5rem;
     }
 }
 
 @media only screen and (max-width: 320px){
-    .section-4 .card{
-        width: 18rem;
+    .section-3 .card{
+        width: 14rem;
     }
 
-    .section-4 .carousel-item{
+    /* .section-3 .carousel-item{
         padding-left: 0rem;
-        margin-left: -1.45rem;
-    }
+        margin-left: -1.5rem;
+        margin-top: 5em;
+    } */
 
 }
