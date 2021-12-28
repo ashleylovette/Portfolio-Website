@@ -22,6 +22,17 @@ section{
     --light-gray: #rgba(255,255,255,025);
 }
 
+nav.navbar {
+    position: fixed;
+    background-color: black;
+    width: 100%; 
+    z-index: 1;
+}
+
+.navbar-items {
+    margin: 0;
+}
+
 
 
 header a{
@@ -49,6 +60,7 @@ header {
 }
 
 .dropdown-content a{
+    margin-top: 0;
     color: whitesmoke;
     padding: 12px 16px;
     text-decoration: none;
@@ -57,8 +69,6 @@ header {
 
 .dropdown:hover .dropdown-content{
     display: block;
-    transform: translateX(.75em);
-    translate: translate(300ms);
 }
 
 /* DROPDOWN END */
@@ -241,7 +251,7 @@ header .container .col-md-7 button{
     padding: 12vmin 5vmin 12vmin 10vmin;
     box-shadow: 0px 25px 42px rgba(0,0,0,0.2); 
     font-family: var(--Rubik);
-    z-index: 1;
+    z-index: 0.8;
 }
 
 .section-1 .row .col-md-6 h1{
@@ -283,7 +293,7 @@ header .container .col-md-7 button{
 
 .tech-stack .rect{
     position: relative;
-    z-index: 1;
+    z-index: 0.8;
     background: white;
     width: 17rem;
     height: 12rem;

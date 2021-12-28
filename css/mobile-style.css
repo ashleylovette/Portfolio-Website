@@ -34,7 +34,6 @@
         font-size: .85em;
     }
 
-
     .tech-stack .rect{
         width: 10rem;
         height: 12rem;
@@ -82,13 +81,17 @@
  
 /* large phone */
 @media only screen and (max-width: 425px){
+    header .navbar-toggler {
+        margin-left: 118px;
+    }
+
+    
+    .section-3 .carousel-item{
+        margin-top: 5rem;
+    }
 
     footer .row .col-md-2{
         margin-top: 8vmin;
-    }
-
-    .section-3 .carousel-item{
-        margin-top: 5rem;
     }
 }
 
