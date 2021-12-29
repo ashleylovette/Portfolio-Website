@@ -25,12 +25,10 @@ section{
 nav.navbar {
     position: fixed;
     background-color: black;
-    width: 100%; 
+    width: 100%;
     z-index: 1;
-}
+    padding: 1.5rem 1.5rem;
 
-.navbar-items {
-    margin: 0;
 }
 
 
@@ -74,10 +72,6 @@ header {
 /* DROPDOWN END */
 
 /* NAVBAR */
-
-.navbar-nav {
-    padding-right: 10.5em;
-}
 
 header .nav-item{
     margin-left: 20px;
@@ -331,7 +325,7 @@ header .container .col-md-7 button{
 
 .section-3 .card{
     width: 22rem;
-    height: max(38rem);
+    height: max(39rem);
 }
 .section-3 img {
     max-height: 500px;
