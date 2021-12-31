@@ -22,17 +22,6 @@ section{
     --light-gray: #rgba(255,255,255,025);
 }
 
-nav.navbar {
-    position: fixed;
-    background-color: black;
-    width: 100%;
-    z-index: 1;
-    padding: 1.5rem 1.5rem;
-
-}
-
-
-
 header a{
     font-family: var(--Rubik-font);
     font-size: 0.9em;
@@ -41,10 +30,45 @@ header a{
 
 header {
     background: var(--bg);
-    padding-bottom: -7em;
+}
+
+/* NAVBAR */
+
+nav.navbar {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    z-index: 1;
+
+    /* OPACITY MESSES UP WHEN LINKS ARE HOVERED OVER */
+    /* opacity: 85%; */
+}
+
+header .navbar-brand {
+    padding-left: 2.5rem;
+    margin-right: 0;
+}
+
+header .navbar-nav a.nav-item.nav-link {
+    display: flex;
+    padding: 0px 20px;
 }
 
 
+header .navbar-brand:hover{
+    color:#c92c80;
+}
+
+header .nav-link:hover{
+    color: #c92c80;
+}
+
+i.fas.fa-bars {
+    color: whitesmoke;
+    padding-top: 2px;
+}
+
+/* NAVBAR END */
 
 /* DROPDOWN */
 
@@ -53,14 +77,13 @@ header {
     position: absolute;
     background-color: black;
     min-width: 160px;
-    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.2); 
     z-index: 1;
 }
 
-.dropdown-content a{
+header .dropdown-content a.nav-item.nav-link{
     margin-top: 0;
     color: whitesmoke;
-    padding: 12px 16px;
+    padding-top: 12px;
     text-decoration: none;
     display: block;
 }
@@ -69,28 +92,11 @@ header {
     display: block;
 }
 
-/* DROPDOWN END */
-
-/* NAVBAR */
-
-header .nav-item{
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-header .navbar-brand {
-    padding-left: 8rem;
-}
-
-header .navbar-brand:hover{
-    color:#c92c80;
-}
-
-header .nav-link:hover {
+.dropdown a.nav-item.nav-link:hover {
     color: #c92c80;
 }
 
-/* NAVBAR END */
+/* DROPDOWN END */
 
 /* FRONT PAGE */
 

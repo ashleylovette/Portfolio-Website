@@ -1,18 +1,13 @@
 /* Tablet */
-@media only screen and (max-width: 768px){
+/* @media only screen and (max-width: 768px){
     header .navbar-brand{
         padding-left: 2rem;
     }
 
-
-    /* CHANGE */
-    header .navbar-toggler {
-        margin-left: 70vmin;
+    i.fas.fa-bars {
+        color: white;
     }
 
-    header .navbar-items {
-        margin-left: 100vmin;
-    }
 
     header .bottom-header {
         position: initial;
@@ -77,10 +72,10 @@
     }
 
 
-}
+} */
  
 /* large phone */
-@media only screen and (max-width: 425px){
+/* @media only screen and (max-width: 425px){
     header .navbar-toggler {
         margin-left: 118px;
     }
@@ -93,17 +88,17 @@
     footer .row .col-md-2{
         margin-top: 8vmin;
     }
-}
+} */
 
-@media only screen and (max-width: 320px){
+/* @media only screen and (max-width: 320px){
     .section-3 .card{
         width: 14rem;
     }
 
-    /* .section-3 .carousel-item{
+    .section-3 .carousel-item{
         padding-left: 0rem;
         margin-left: -1.5rem;
         margin-top: 5em;
-    } */
+    }
 
-}
+} */
