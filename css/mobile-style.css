@@ -1,4 +1,39 @@
 /* Tablet */
+/* @media only screen and (max-width: 1024px) {
+    .section-3 .card {
+        height: 460px;
+        width: 220px;
+        position: relative;
+        margin-top: 2rem;
+    }
+
+    .section-3 .team{
+        display: flex;
+        align-items: center;
+    }
+
+    .section-3 .card .card-text{
+        font-size: 12px;
+        padding-top: 0.5em;
+    }
+    
+    .section-3 .card .card-body a{
+        font-size: 1em;
+    }
+
+    .section-3 .card-img-top {
+        height: 250px;
+    }
+
+    .section-3 .carousel-control-prev {
+        margin-left: -16px;
+    }
+
+    .section-3 .carousel-control-next {
+        margin-right: -16px;
+    }
+} */
+
 @media only screen and (max-width: 991px){
     header .navbar-brand{
         padding-left: 2rem;
@@ -60,7 +95,7 @@
     }
 
     .tech-stack .rect{
-        width: 10rem;
+        width: 12rem;
         height: 12rem;
     }
 
@@ -71,64 +106,62 @@
 
     /* .section-3 .carousel-item{
         padding-left: 0rem;
-    }
+    } */
 
-    .section-3 .card{
-        margin-right: 30rem;
+    .section-3 .card {
+        height: 460px;
+        width: 220px;
+        position: relative;
+        margin-top: 2rem;
     }
 
     .section-3 .team{
         display: flex;
-        flex-direction: column;
-        margin-left: 174px;
-
+        align-items: center;
     }
 
-    .section-3 .carousel-inner{
-        width: 24rem; 
+    .section-3 .card .card-text{
+        font-size: 12px;
+        padding-top: 0.5em;
+    }
+    
+    .section-3 .card .card-body a{
+        font-size: 1em;
     }
 
-    .section-3 .carousel-item{
-        margin-top: 2em;
+    .section-3 .card-img-top {
+        height: 250px;
     }
 
     .section-3 .carousel-control-prev {
-        margin-left: -14px;
+        margin-left: -16px;
     }
 
     .section-3 .carousel-control-next {
-        margin-right: -213px;
-        margin-bottom: -2.25px;
-    } */
+        margin-right: -16px;
+    }
 
 
 }
  
 /* large phone */
-/* @media only screen and (max-width: 425px){
-    header .navbar-toggler {
-        margin-left: 118px;
+@media only screen and (max-width: 425px){
+    .section-1 .row .col-md-6 .panel{
+        position: initial;
+        /* width: 350px; */
+        /* height: initial; */
+        margin-top: -75px;
+        margin-left: 5px;
     }
 
-    
-    .section-3 .carousel-item{
-        margin-top: 5rem;
+}
+
+@media only screen and (max-width: 320px){
+    .tech-stack .rect{
+        width: 10rem;
+        height: 10rem;
     }
 
-    footer .row .col-md-2{
-        margin-top: 8vmin;
-    }
-} */
 
-/* @media only screen and (max-width: 320px){
-    .section-3 .card{
-        width: 14rem;
-    }
 
-    .section-3 .carousel-item{
-        padding-left: 0rem;
-        margin-left: -1.5rem;
-        margin-top: 5em;
-    }
-
-} */
+}

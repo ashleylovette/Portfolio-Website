@@ -334,21 +334,20 @@ header .container .col-md-7 button{
 /* section 3 */
 
 .section-3 .container h1{
-    /* font-size: 6vmin; */
     font-size: clamp(3rem, 1vh ,6rem);
     padding-top: 14vmin;
 }
 
 .section-3 .team{
-    display: inline-flexbox;
+    /* display: inline-flexbox; */
     padding: 11vmin 4vmin;
 }
 
 .section-3 .card {
     /* border: 2px solid red; */
     margin: auto;
-    width: 85%;
-    height: 60%;
+    width: 380px;
+    height: 640px;
     }
 
 
