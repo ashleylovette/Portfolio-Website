@@ -22,6 +22,10 @@ section{
     --light-gray: #rgba(255,255,255,025);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header a{
     font-family: var(--Rubik-font);
     font-size: 0.9em;
@@ -36,6 +40,7 @@ header {
 
 nav.navbar {
     position: fixed;
+    display: flex;
     background-color: black;
     width: 100%;
     z-index: 1;
@@ -50,8 +55,8 @@ header .navbar-brand {
 }
 
 header .navbar-nav a.nav-item.nav-link {
-    display: flex;
-    padding: 0px 20px;
+    padding: 5px 20px;
+    font-size: 1.2rem;
 }
 
 
@@ -63,9 +68,13 @@ header .nav-link:hover{
     color: #c92c80;
 }
 
-i.fas.fa-bars {
-    color: whitesmoke;
-    padding-top: 2px;
+.hamburger {
+    display: none;
+    appearance: none;
+}
+
+.hamburger:hover span{
+    background-color: #c92c80;
 }
 
 /* NAVBAR END */
@@ -76,20 +85,26 @@ i.fas.fa-bars {
     display: none;
     position: absolute;
     background-color: black;
-    min-width: 160px;
+    margin-right: 5rem;
+    min-width: 100px;
     z-index: 1;
+    border-radius: 15%;
 }
 
 header .dropdown-content a.nav-item.nav-link{
     margin-top: 0;
     color: whitesmoke;
-    padding-top: 12px;
+    padding: 9px 0px 6px 6px;
     text-decoration: none;
     display: block;
 }
 
+
+
 .dropdown:hover .dropdown-content{
     display: block;
+    transform: translateX(-35px);
+    margin-top: 1px;
 }
 
 .dropdown a.nav-item.nav-link:hover {
@@ -178,8 +193,6 @@ header .container .col-md-7 h6.animate-text.at4::before {
 }
 
 /* END TEXT ANIMATION */
-
-
 
 
 header .contianer .col-md-7 h1 {
@@ -273,7 +286,7 @@ header .container .col-md-7 button{
     background-image: url('/assets/pexels-designecologist-1779487.jpg');
     background-position: -5rem -20rem;
     background-size: 40%;
-    position: relative;
+    /* position: relative; */
 }
 
 .cover .content{
@@ -292,7 +305,7 @@ header .container .col-md-7 button{
 
 
 .tech-stack .rect{
-    position: relative;
+    /* position: relative; */
     z-index: 0.8;
     background: white;
     width: 17rem;
@@ -321,36 +334,32 @@ header .container .col-md-7 button{
 /* section 3 */
 
 .section-3 .container h1{
-    font-size: 6vmin;
+    /* font-size: 6vmin; */
+    font-size: clamp(3rem, 1vh ,6rem);
     padding-top: 14vmin;
 }
 
 .section-3 .team{
+    display: inline-flexbox;
     padding: 11vmin 4vmin;
 }
 
-.section-3 .card{
-    width: 22rem;
-    height: max(39rem);
-}
-.section-3 img {
-    max-height: 500px;
-}
+.section-3 .card {
+    /* border: 2px solid red; */
+    margin: auto;
+    width: 85%;
+    height: 60%;
+    }
 
 
 .section-3 .card .card-text{
+    font-size: clamp(0.5rem, 1rem, 1rem);
     padding-top: 0.5em;
 }
 
 .section-3 .card .card-body a{
     padding-top: initial;
     font-size: 1.5em;
-}
-
-.section-3 .carousel-item{
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-bottom: 2em;
 }
 
 .border-radius{
@@ -363,6 +372,7 @@ header .container .col-md-7 button{
 .carousel-control-prev , 
 .carousel-indicators {
     filter: invert(100%);
+    position: absolute;
 }
 
 /* Footer */
