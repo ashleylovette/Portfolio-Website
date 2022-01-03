@@ -19,7 +19,7 @@ section{
     --NotoSans: "Noto-Sans", monospace;
     --light-black: hsla(300, 1%, 14%, 0.184);
     --bg: black;
-    --pink: #c92c80;
+    --pink: rgba(219,78,179,255);
 }
 
 html {
@@ -149,6 +149,10 @@ header .container .col-md-7 h6.animate-text.at4 {
     
 }
 
+header a.nav-item.nav-link.on-page-link.is-active{
+    color: var(--pink);
+}
+
 /* TEXT ANIMATION */
 
 header .container .col-md-7 h6.animate-text {
@@ -267,6 +271,8 @@ header .container .col-md-7 button{
     z-index: 0.8;
 }
 
+
+
 .section-1 .row .col-md-6 h1{
     font-weight: bold;
     padding: 0.4em 0;
@@ -345,7 +351,7 @@ header .container .col-md-7 button{
     /* border: 2px solid red; */
     margin: auto;
     width: 24vw;
-    height: 64vh;
+    height: 85vh;
     }
 
 
