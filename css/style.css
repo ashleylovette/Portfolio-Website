@@ -19,7 +19,7 @@ section{
     --NotoSans: "Noto-Sans", monospace;
     --light-black: hsla(300, 1%, 14%, 0.184);
     --bg: black;
-    --light-gray: #rgba(255,255,255,025);
+    --pink: #c92c80;
 }
 
 html {
@@ -27,7 +27,7 @@ html {
 }
 
 header a{
-    font-family: var(--Rubik-font);
+    font: var(--Rubik);
     font-size: 0.9em;
     color: whitesmoke;
 }
@@ -44,6 +44,7 @@ nav.navbar {
     background-color: black;
     width: 100%;
     z-index: 1;
+    font: var(--Rubik);
 
     /* OPACITY MESSES UP WHEN LINKS ARE HOVERED OVER */
     /* opacity: 85%; */
@@ -56,16 +57,16 @@ header .navbar-brand {
 
 header .navbar-nav a.nav-item.nav-link {
     padding: 5px 20px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 
 header .navbar-brand:hover{
-    color:#c92c80;
+    color: var(--pink);
 }
 
 header .nav-link:hover{
-    color: #c92c80;
+    color: var(--pink);
 }
 
 .hamburger {
@@ -74,7 +75,7 @@ header .nav-link:hover{
 }
 
 .hamburger:hover span{
-    background-color: #c92c80;
+    background-color: var(--pink);
 }
 
 /* NAVBAR END */
@@ -108,7 +109,7 @@ header .dropdown-content a.nav-item.nav-link{
 }
 
 .dropdown a.nav-item.nav-link:hover {
-    color: #c92c80;
+    color: var(--pink);
 }
 
 /* DROPDOWN END */
@@ -144,7 +145,7 @@ header .container .col-md-7 h6{
 
 
 header .container .col-md-7 h6.animate-text.at4 {
-    color: #c92c80;
+    color: var(--pink) ;
     
 }
 
@@ -197,7 +198,6 @@ header .container .col-md-7 h6.animate-text.at4::before {
 
 header .contianer .col-md-7 h1 {
     font-size: 8vmin;
-
     color: rgb(196, 191, 191);
     font-weight: bold;
     padding: 0.1em 0em;
@@ -208,10 +208,10 @@ header .container .col-md-7 p{
     color: whitesmoke;
 }
 
-/* BUTTON ANIMATION */
+/* BUTTON */
 
 header .container .col-md-7 button:hover {
-    box-shadow: 0 0.4rem 1.4rem #c92c80;
+    box-shadow: 0 0.4rem 1.4rem var(--pink);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
@@ -232,7 +232,7 @@ header .container .col-md-7 button{
     }
 }
 
-/* END BUTTON ANIMATION */
+/* END BUTTON */
 /* FRONT PAGE END */
 
 
@@ -286,7 +286,6 @@ header .container .col-md-7 button{
     background-image: url('/assets/pexels-designecologist-1779487.jpg');
     background-position: -5rem -20rem;
     background-size: 40%;
-    /* position: relative; */
 }
 
 .cover .content{
@@ -339,20 +338,19 @@ header .container .col-md-7 button{
 }
 
 .section-3 .team{
-    /* display: inline-flexbox; */
     padding: 11vmin 4vmin;
 }
 
 .section-3 .card {
     /* border: 2px solid red; */
     margin: auto;
-    width: 380px;
-    height: 640px;
+    width: 24vw;
+    height: 64vh;
     }
 
 
 .section-3 .card .card-text{
-    font-size: clamp(0.5rem, 1rem, 1rem);
+    font-size: 1rem;
     padding-top: 0.5em;
 }
 
@@ -372,36 +370,4 @@ header .container .col-md-7 button{
 .carousel-indicators {
     filter: invert(100%);
     position: absolute;
-}
-
-/* Footer */
-
-footer{
-    background:rgba(0, 0, 0, 0.815);
-    overflow-x: hidden;
-    padding: 14vmin 18vmin;
-}
-
-footer p>span{
-    color: whitesmoke;
-}
-
-footer input{
-    border: none !important;
-}
-
-footer input::placeholder {
-    color: white !important;
-}
-
-footer .input-group .input-group-text{
-    border: none;
-}
-
-footer .column i{
-    color: white;
-}
-
-footer .column i + i{
-    padding: 0 0.5em;
 }

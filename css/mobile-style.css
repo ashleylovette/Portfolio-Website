@@ -1,38 +1,4 @@
 /* Tablet */
-/* @media only screen and (max-width: 1024px) {
-    .section-3 .card {
-        height: 460px;
-        width: 220px;
-        position: relative;
-        margin-top: 2rem;
-    }
-
-    .section-3 .team{
-        display: flex;
-        align-items: center;
-    }
-
-    .section-3 .card .card-text{
-        font-size: 12px;
-        padding-top: 0.5em;
-    }
-    
-    .section-3 .card .card-body a{
-        font-size: 1em;
-    }
-
-    .section-3 .card-img-top {
-        height: 250px;
-    }
-
-    .section-3 .carousel-control-prev {
-        margin-left: -16px;
-    }
-
-    .section-3 .carousel-control-next {
-        margin-right: -16px;
-    }
-} */
 
 @media only screen and (max-width: 991px){
     header .navbar-brand{
