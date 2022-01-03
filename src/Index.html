@@ -19,7 +19,7 @@
     <body>
 <!-- Begin Header -->
         <header>
-            <div class="container-fluid p-0">
+            <div class="container-fluid p-0" id="home">
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="#">
                         <i class="fas fa-code"></i>
@@ -34,9 +34,10 @@
                     
                     <div class="navbar-nav">
                         <div class="collapse navbar-collapse navbar-items" id="navbarNavAltMarkup">
-                            <a class="nav-item nav-link on-page-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                            <a class="nav-item nav-link on-page-link" href="#">About</a>
-                            <a class="nav-item nav-link on-page-link" href="#">Portfolio</a>
+                            <a class="nav-item nav-link on-page-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link on-page-link" href="#about">About</a>
+                            <a class="nav-item nav-link on-page-link" href="#techStack">Tech Stack</a>
+                            <a class="nav-item nav-link on-page-link" href="#portfolio">Portfolio</a>
                             <li class="nav-item dropdown">
                             <div class="dropdown">
                                 <a class="nav-item nav-link" href="#">Contact</a>
@@ -82,7 +83,7 @@
 
 <!-- Body Section 1 -->
         <main>
-            <section class="section-1"> 
+            <section class="section-1" id="about"> 
                 <div class="container-fluid text-center">
                     <div class="row">
                         <div class="col-md-6">
@@ -105,7 +106,7 @@
             </section>
 
 <!-- Body Section 2 -->
-            <section class="section-2 container-fliud p-0">
+            <section class="section-2 container-fliud p-0" id="techStack">
                 <div class="cover">
                     <h1 class="content text-center">{tech stack}</h1>
                 </div>
@@ -141,7 +142,7 @@
             </section>
 
 <!-- Section 3 -->
-            <section class="section-3">
+            <section class="section-3" id="portfolio">
                 <div class="team row">
                     <div class="col-md-4 col-sm-12 text-center">
                         <!-- first card -->
