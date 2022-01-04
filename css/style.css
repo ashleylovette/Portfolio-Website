@@ -153,9 +153,11 @@ header .container .col-md-7 h6.animate-text.at4 {
     
 }
 
-header a.nav-item.nav-link.on-page-link.is-active{
+
+/* is active class */
+/* header a.nav-item.nav-link.on-page-link.is-active{
     color: var(--pink);
-}
+} */
 
 /* TEXT ANIMATION */
 
@@ -352,7 +354,6 @@ header .container .col-md-7 button{
 }
 
 .section-3 .card {
-    /* border: 2px solid red; */
     margin: auto;
     width: 24vw;
     height: 85vh;
