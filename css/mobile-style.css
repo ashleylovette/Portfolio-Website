@@ -112,12 +112,16 @@
  
 /* large phone */
 @media only screen and (max-width: 425px){
+    header .bottom-header{
+        padding-top: 4rem;
+    }
+
     .section-1 .row .col-md-6 .panel{
         position: initial;
         /* width: 350px; */
         /* height: initial; */
         margin-top: -75px;
-        margin-left: 5px;
+        margin-left: 3px;
     }
 
 }

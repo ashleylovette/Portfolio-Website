@@ -19,7 +19,7 @@ section{
     --NotoSans: "Noto-Sans", monospace;
     --light-black: hsla(300, 1%, 14%, 0.184);
     --bg: black;
-    --pink: rgba(219,78,179,255);
+    --pink: #c8009f;    ;
 }
 
 html {
@@ -76,6 +76,10 @@ header .nav-link:hover{
 
 .hamburger:hover span{
     background-color: var(--pink);
+}
+
+header .bottom-header img{
+    border: 2px solid red;
 }
 
 /* NAVBAR END */
@@ -354,6 +358,11 @@ header .container .col-md-7 button{
     height: 85vh;
     }
 
+.section-3 .card .github-link{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 7px;
+}
 
 .section-3 .card .card-text{
     font-size: 1rem;
