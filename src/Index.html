@@ -238,49 +238,58 @@
 
 <!-- End Body -->
         </main>
-        <!-- <footer>
+        <footer>
             <div class="container p-0">
                 <div class="row text-left">
-                    <div class="col-md-5 col-md-5">
-                        <h4 class="text-light">About Us</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque laborum recusandae quos!</p>
+                    <div class="col-md-4">
+                        <h4 class="text-light pt-1">Get in touch!</h4>
+                        <form name="contact" method="POST" data-netlify="true">
+                            <div class="form-group">
+                                <label for="name">Your Name:</label>
+                                <input type="text" name="name" id="name" class="form-control bg-dark text-white">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email:</label>
+                                <input type="email" name="email" id="email" class="form-control bg-dark text-white">
+                            </div>
+                        
+                        </form>
                         <p class="pt-4 text-muted">
                             Copyright ©2021 All Rights Reserved | 
                             <span>Ashley Lovette</span>
                         </p>
                     </div>
-                    <div class="col-md-5">
-                        <h4 class="text-light">Newletter</h4>
-                        <p class="text-muted">Stay Updated</p>
-                        <form class="form-inline">
+                    <div class="col-md-6"> 
+                    <label for="email"><h4 class="text-light">Leave A Message:</h4></label>   
+                        <p class="text-muted">I'll get back to you ASAP!</p>
+                        
                             <div class="col pl-0">
-                                <div class="input-group pr-5">
-                                    <input 
+                                <div class="form-group pr-5">
+                                    <textarea 
                                     type="text" 
-                                    class="form-control bg-dark text-white" 
-                                    placeholder="Email">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text">
-                                            <i class="fas fa-arrow-right"></i>
-                                        </div>
-                                    </div>
+                                    class="form-control form-control-lg bg-dark text-white" 
+                                    ></textarea>
                                 </div>
                             </div>
-                        </form>
+        
                     </div>
+
+                
                     <div class="col-md-2 col-sm-12">
-                        <h4 class="text-light">Follow Us!</h4>
-                        <p class="text-muted">Stay up to date with the latest</p>
-                        <div class="column">
-                            <i class="fab fa-facebook"></i>
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-youtube"></i>
+                        <h4 class="text-light">Connect with me!</h4>
+                        <p class="text-muted">Stay up to date with my latest projects</p>
+                        <div class="column text-center">
+                            <a href="https://github.com/ashleylovette">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ashley-lovette-aa4983224/">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer> -->
+        </footer>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
