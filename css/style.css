@@ -328,6 +328,12 @@ header .container .col-md-7 button{
     box-shadow: 1px 2px 50px 0px #686a81;
 }
 
+.tech-stack .rect:hover{
+    box-shadow: 0 0.4rem 1.4rem var(--pink);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
 .tech-stack{
     margin-top: -25vmin;
     padding-bottom: 2.2rem;
@@ -364,6 +370,11 @@ header .container .col-md-7 button{
     position: absolute;
     bottom: 0;
     margin-bottom: 7px;
+}
+
+i.github-link:hover {
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
 }
 
 .section-3 .card .card-text{

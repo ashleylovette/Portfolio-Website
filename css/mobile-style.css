@@ -116,12 +116,6 @@
         padding-top: 4rem;
     }
 
-    .section-1 .row .col-md-6 .panel{
-        position: initial;
-        margin-top: -75px;
-        margin-left: 3px;
-    }
-
 }
 
 @media only screen and (max-width: 320px){
