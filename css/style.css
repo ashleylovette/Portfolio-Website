@@ -397,17 +397,20 @@ footer {
     font-weight: bold;
     width: 100%;
     padding: 1em; 
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     margin: 0;
     font-family: var(--Heebo);
 }
 
+footer button.btn{
+    border-radius: 30px;
+    font-weight: bold;
+}
 
-
-footer h2 {
-    padding-top: 1rem;
-    padding-left: 4rem;
-    left: 0;
+footer button.btn:hover{
+    box-shadow: 0 0.4rem 1.2rem var(--pink);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
 }
 
 footer i{
