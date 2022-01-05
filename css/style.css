@@ -155,9 +155,10 @@ header .container .col-md-7 h6.animate-text.at4 {
 
 
 /* is active class */
-/* header a.nav-item.nav-link.on-page-link.is-active{
+/* header a.nav-item.nav-link.on-page-link */
+.is-active{
     color: var(--pink);
-} */
+}
 
 /* TEXT ANIMATION */
 
