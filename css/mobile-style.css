@@ -36,7 +36,7 @@
     }
 
     header #navbarNavAltMarkup{
-        position: absolute;
+        position: relative;
         right: 0;
         background-color: var(--bg);
         margin-top: 1.5rem;
@@ -49,7 +49,7 @@
 
 
     .section-1 .row .col-md-6 .panel{
-        position: initial;
+        position: absolute;
         width: 350px;
         height: initial;
         margin-top: 75px;
@@ -68,11 +68,6 @@
     .tech-stack .rect h1{
         font-size: 2rem;
     }
-
-
-    /* .section-3 .carousel-item{
-        padding-left: 0rem;
-    } */
 
     .section-3 .card {
         height: 460px;
