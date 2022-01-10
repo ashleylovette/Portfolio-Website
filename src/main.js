@@ -7,31 +7,6 @@ const contactNav = document.getElementById('contactNav');
 const sections = document.querySelectorAll('section');
 const navLink = document.querySelectorAll('nav .navbar-nav a');
 
-// SCROLL NAVIGATION
-
-window.addEventListener('scroll', () => {
-    let current = '';
-
-    sections.forEach( section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        const scrollY = window.scrollY;
-        if (scrollY >= sectionTop){
-            current = section.getAttribute('id');
-        }   
-    });
-
-    navLink.forEach( link => {
-        link.classList.remove('active');
-        if(link.classList.contains(current)){
-              
-        }
-    })
-    
-    // console.log(current);
-});
-
-
 
 // CLICK NAVIGATION
 
