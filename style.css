@@ -414,6 +414,10 @@ footer {
     font-family: var(--Heebo);
 }
 
+footer input#message{
+    height: 5rem;
+}
+
 footer button.btn{
     border-radius: 30px;
     font-weight: bold;
