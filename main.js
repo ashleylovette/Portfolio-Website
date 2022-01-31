@@ -4,8 +4,6 @@ const aboutNav = document.getElementById('aboutNav');
 const techStackNav = document.getElementById('techStackNav');
 const portfolioNav = document.getElementById('portfolioNav');
 const contactNav = document.getElementById('contactNav');
-const sections = document.querySelectorAll('section');
-const navLink = document.querySelectorAll('nav .navbar-nav a');
 
 
 // CLICK NAVIGATION
