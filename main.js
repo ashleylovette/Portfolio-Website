@@ -5,6 +5,9 @@ const techStackNav = document.getElementById('techStackNav');
 const portfolioNav = document.getElementById('portfolioNav');
 const contactNav = document.getElementById('contactNav');
 
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("section .container-fluid header nav .navbar-nav .navLink");
+
 // CLICK NAVIGATION
 
 homeNav.addEventListener("click", e => {
@@ -56,15 +59,4 @@ contactNav.addEventListener("click", e => {
 
 // SCROLL NAVIGATION
 
-// document.addEventListener('scroll', e => {
-//     lastKnownScrollPosition = window.scrollY;
-//     console.log(lastKnownScrollPosition);
 
-//     if(lastKnownScrollPosition > 815) {
-//         // navLinks.classList.remove("is-active");
-//         aboutNav.classList.add("is-active");
-//     } else {
-//         // navLinks.classList.remove("is-active");
-//         homeNav.classList.add("is-active");
-//     }
-// })
