@@ -57,6 +57,4 @@ contactNav.addEventListener("click", e => {
     homeNav.classList.remove("is-active");;
 })
 
-// SCROLL NAVIGATION
-
 

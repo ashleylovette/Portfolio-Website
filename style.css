@@ -363,7 +363,7 @@ header .container .col-md-7 button{
 .section-3 .card {
     margin: auto;
     width: 24vw;
-    height: 85vh;
+    height: 90vh;
     }
 
 .section-3 .card .github-link{
@@ -379,7 +379,7 @@ i.github-link:hover {
 
 .section-3 .card .card-text{
     font-size: 1rem;
-    padding-top: 0.5em;
+    padding: 0.5em;
 }
 
 .section-3 .card .card-body a{
@@ -409,7 +409,7 @@ footer {
     font-weight: bold;
     width: 100%;
     padding: 1em; 
-    padding-top: 1rem;
+    padding-top: 2rem;
     margin: 0;
     font-family: var(--Heebo);
 }
